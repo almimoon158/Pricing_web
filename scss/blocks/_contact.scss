@@ -1,0 +1,281 @@
+.contact {
+  margin-top: 83px;
+}
+
+.contact-title__text {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536b;
+  width: 634px;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-box__input,
+.input-box__textarea {
+  display: block;
+}
+
+.contact-items {
+  margin-top: 62px;
+}
+
+.input-box {
+  width: 445px;
+}
+
+.input-box__input {
+  width: 445px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-bottom: 1px solid #36536b;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 45px;
+}
+
+.input-box__input ~ .input-box__input,
+.input-box__textarea {
+  margin-top: 23px;
+}
+
+.input-box__textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: none;
+  padding-left: 20px;
+  padding-bottom: 63px;
+  border-bottom: 1px solid #36536b;
+  background-color: transparent;
+  height: 89px;
+  resize: none;
+  outline: none;
+  width: 445px;
+}
+
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.checkbox__input {
+  accent-color: #ba4270;
+  mix-blend-mode: normal;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkbox__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  width: 395px;
+}
+
+.input-box__submit-btn {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  margin-top: 24px;
+  padding: 14px 49px;
+  border: 1px solid #36536b;
+  box-sizing: border-box;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.input-box__submit-btn:hover {
+  color: #fbfcfe;
+  background-color: #36536b;
+  border: 1px solid #36536b;
+  transition: .1s ease;
+}
+
+// start join sec
+
+.already-build {
+  width: 541px;
+  margin-top: -54px;
+  margin-left: 10px;
+}
+
+.already-build-title__text {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.184615px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  width: 445px;
+}
+
+.builders-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.builders-list ~ .builders-list {
+  margin-top: 40px;
+}
+
+.builders-list-mobile {
+  margin-top: 32px;
+  display: none;
+}
+
+.builders-list-mobile-builders {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.builders-list-mobile-builders ~ .builders-list-mobile-builders {
+  margin-top: 40px;
+}
+
+.builder-list__items-form-mobile ~ .builder-list__items-form-mobile,
+.builder-list__items ~ .builder-list__items {
+  margin-left: 10px;
+}
+
+
+// *RESPONSIVE FOR TABLET
+@include breakpoint-down (768px) {
+  .contact {
+    margin-top: 41px;
+  }
+
+  .contact-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-title__text {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    width: 455px;
+    text-align: center;
+  }
+
+  .contact-items {
+    margin-top: 33.4px;
+  }
+
+  .already-build {
+    margin-top: 64px;
+  }
+
+  .already-build-title__text {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #36536b;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+
+  .already-build-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@include breakpoint-down (930px) {
+  .contact-items {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .already-build {
+    margin-top: 64px;
+  }
+}
+
+@include breakpoint-down (590px) {
+  .already-build {
+    width: 100%;
+  }
+}
+
+
+// *REPONSIVE FOR MOBILE
+@include breakpoint-down (480px) {
+  .contact {
+    margin-top: 22px;
+  }
+
+  .contact-title__text {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    width: 327px;
+  }
+
+  .input-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-box__input,
+  .input-box__textarea {
+    width: 100%;
+  }
+
+  .checkbox__text {
+    width: 76%;
+  }
+
+  .already-build-title__text {
+    letter-spacing: -0.184615px;
+    width: 90%;
+  }
+
+  .builders-list {
+    display: none;
+  }
+
+  .builders-list-mobile {
+    display: block;
+  }
+}

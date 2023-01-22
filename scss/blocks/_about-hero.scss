@@ -1,0 +1,142 @@
+.about-hero {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.about-hero-inner__title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536b;
+  width: 664px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.about-us:nth-child(3) {
+  margin-top: 57px;
+}
+
+.about-us__title {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #36536b;
+  width: 255px;
+}
+
+.about-us__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  width: 635px;
+}
+
+
+// *RESPONSIVE FOR TABLET
+@include breakpoint-down (768px) {
+  .about-hero {
+    margin-top: 42px;
+  }
+
+  .about-hero-inner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-hero-inner__title {
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-us {
+    margin-top: 31px;
+  }
+
+  .about-us:nth-child(3) {
+    margin-top: 64px;
+  }
+
+  .about-us__title {
+    width: 223px;
+  }
+  
+  .about-us__text {
+    line-height: 28px;
+    width: 456px;
+  }
+}
+
+@include breakpoint-down (572px) {
+  .about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-direction: column;
+  }
+
+  .about-us__text {
+    width: 100%;
+  }
+}
+
+@include breakpoint-down (655px) {
+  .about-us__title {
+    width: 253px;
+  }
+}
+
+
+// *RESPONSIVE FOR MOBILE
+@include breakpoint-down (480px) {
+  .about-hero {
+    margin-top: 21px;
+  }
+
+  .about-hero-inner__title {
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+    width: 315px;
+  }
+
+  .about-us {
+    margin-top: 28px;
+  }
+
+  .about-us__title {
+    width: auto;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+  }
+  
+  .about-us__text {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .about-us:nth-child(3) {
+    margin-top: 48px;
+  }
+}

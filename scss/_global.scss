@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #EDF3F8;
+  background-image: url("../../img/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 470px);
+  background-position-y: calc(0% - 527px);
+}

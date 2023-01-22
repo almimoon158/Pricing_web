@@ -1,0 +1,152 @@
+.footer {
+  background-color: #1b262f;
+  background-image: url("../../img/body-bg.png");
+  background-size: 780px 780px;
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 700px);
+  background-position-y: calc(0% - 110px);
+}
+
+.footer-wrapper,
+.footer-inner,
+.footer-social-media-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper {
+  margin-top: 95px;
+  padding: 31px 0;
+}
+
+.footer-navlist {
+  display: flex;
+  align-items: center;
+}
+
+.footer-navlist-item,  
+.footer-social-media-list-item {
+  list-style-type: none;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-navlist-item__link {
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.active-link {
+  opacity: 1;
+}
+
+.footer-navlist-item__link:hover {
+  opacity: 1;
+  transition: .1s ease;
+}
+
+.footer-navlist-item:first-child {
+  margin-left: 64px;
+}
+
+.footer-navlist-item ~ .footer-navlist-item {
+  margin-left: 40px;
+}
+
+.footer-social-media-list-item {
+  cursor: default;
+}
+
+.footer-social-media-list-item ~ .footer-social-media-list-item {
+  margin-left: 24px;
+}
+
+.footer-social-media-item-link__img {
+  cursor: pointer;
+}
+
+.footer-social-media-item-link__img:hover path {
+  fill: #da6d97;
+  transition: .1s ease;
+}
+
+// *RESPONSIVE FOR TABLET
+@include breakpoint-down (768px) {
+  .footer {
+    background-position-x: calc(50% + 370px);
+    background-position-y: calc(0% - 125px);
+  }
+}
+@include breakpoint-down (660px) {
+  .footer-navlist-item:first-child {
+    margin-left: 40px;
+  }
+  
+  .footer-navlist-item ~ .footer-navlist-item {
+    margin-left: 33px;
+  }
+
+  .footer-social-media-list-item ~ .footer-social-media-list-item {
+    margin-left: 18px;
+  }
+}
+
+@include breakpoint-down (572px) {
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer-social-media {
+    margin-top: 45px;
+  }
+}
+
+
+//* RESPONSIVE FOR MOBILE
+@include breakpoint-down (480px) {
+  .footer {
+    background-position-x: calc(50%);
+    background-position-y: calc(0% + 180px);
+  }
+
+  .footer-wrapper {
+    margin-top: 142px;
+    padding-top: 41px;
+    padding-bottom: 50px;
+  }
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-navlist {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    margin-top: 35px;
+  }
+
+  .footer-navlist-item:first-child {
+    margin-left: 0;
+  }
+  
+  .footer-navlist-item ~ .footer-navlist-item {
+    margin-left: 0;
+    margin-top: 31px;
+  }
+
+  .footer-social-media {
+    margin-top: 39px;
+  }
+
+  .footer-social-media-list-item ~ .footer-social-media-list-item {
+    margin-left: 24px;
+  }
+}

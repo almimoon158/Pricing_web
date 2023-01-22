@@ -1,0 +1,145 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.header-main-items,
+.navbar__navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-site-logo-link,
+.footer-inner-site-logo-link {
+  cursor: default;
+}
+
+.header-site-logo-link__logo,
+.footer-inner-site-logo-link__logo {
+  cursor: pointer;
+}
+
+.header-site-logo-link__logo:hover,
+.footer-inner-site-logo-link__logo:hover {
+  opacity: 0.8;
+}
+
+.navbar__item ~ .navbar__item {
+  margin-left: 40px;
+}
+
+.navbar__item:first-child {
+  margin-left: 64px;
+}
+
+.navbar__link {
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active-link,
+.navbar__link:hover {
+  opacity: 1;
+}
+
+.header-inner-header-btn {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  padding: 16px 24.5px;
+  background-color: #BA4270;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-inner-header-btn:hover,
+.ready-sec-form__btn:hover {
+  background-color: #da6d97;
+  transition: .1s ease-in-out;
+}
+
+.header-inner-burger-btn {
+  display: none;
+  cursor: default;
+  border: none;
+  background-color: transparent;
+}
+
+.header-inner-burger-img {
+  cursor: pointer;
+}
+
+// *RESPONSIVE FOR TABLET
+
+@include breakpoint-down (768px) {
+  .container {
+    max-width: 1190px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  body {
+    background-position-x: calc(50% + 508px);
+    background-position-y: calc(0% - 467px);
+  }
+}
+
+@include breakpoint-down (690px) {
+  .navbar__item ~ .navbar__item {
+    margin-left: 30px;
+  }
+  
+  .navbar__item:first-child {
+    margin-left: 34px;
+  }
+
+  .header-inner-header-btn {
+    padding: 13px 18px;
+  }
+
+  .navbar__link {
+    font-size: 14px;
+  }
+}
+
+// *RESPONSIVE FOR MOBILE
+
+@include breakpoint-down (615px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  body {
+    background-position-x: calc(50% + 280px);
+    background-position-y: calc(0% - 640px);
+  }
+
+  .navbar,
+  .header-inner-header-btn {
+    display: none;
+  }
+
+  .header-inner-burger-btn {
+    display: block;
+  }
+}
